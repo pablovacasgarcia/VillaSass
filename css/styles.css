@@ -8509,7 +8509,7 @@ header {
 
 #carouselExampleInterval {
   grid-column: 1 / -1;
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
   background-color: lightgray;
   padding: 5%;
   text-align: center; }
