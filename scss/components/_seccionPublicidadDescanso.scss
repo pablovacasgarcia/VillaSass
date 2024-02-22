@@ -1,0 +1,56 @@
+/// Componente: publicidad descanso
+#publicidad-descanso {
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 3 / 4; // Ocupa la fila 3 a la 4 en la rejilla
+    text-align: center; // Alineación del texto al centro
+    padding: 5%; // Relleno interno del 5%
+
+    .div-principal {
+        color: color(quaternary); // Color del texto cuaternario
+
+        h1 {
+            margin-bottom: 5%; // Margen inferior del 5%
+        }
+
+        h4 {
+            color: color(secundary); // Color secundario para el título
+            text-decoration: underline; // Subraya el texto
+        }
+    }
+
+    .div-secundario {
+        @include flex($alignitem: none); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+        flex-wrap: wrap; // Envuelve los elementos en la línea cuando no caben
+
+        img {
+            height: 100%; // Altura de la imagen al 100%
+        }
+
+        div {
+            width: 50%; // Ancho del 50%
+            @include flex($alignitem: none); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+            flex-wrap: wrap; // Envuelve los elementos en la línea cuando no caben
+
+            div {
+                width: 50%; // Ancho del 50%
+                height: 100%; // Altura del 100%
+            }
+        }
+    }
+}
+
+// Mediaquery
+@include response(md) {
+    #publicidad-descanso {
+        .div-secundario {
+            flex-direction: column; // Cambia la dirección de flexbox a columna
+            justify-content: center; // Alinea los elementos al centro verticalmente
+
+            div {
+                width: 100%; // Ancho del 100%
+            }
+        }
+    }
+}
+
+    

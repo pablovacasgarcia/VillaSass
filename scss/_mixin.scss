@@ -1,0 +1,134 @@
+///Mixin que modifica los elementos dependiendo de la pantalla con media query
+///@example
+/// @include response(md){
+///    .footer{
+///       display: none;
+///   }
+/// }
+///@param {string} $breakpoint - Nombre del breakpoint
+///
+@mixin response($breakpoint){
+    @if($breakpoint == xl){
+        @media(max-width: 1200px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == lg){
+        @media(max-width: 992px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == md){
+        @media(max-width: 768px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == sm){
+        @media(max-width: 576px){
+            @content;
+        }
+    }
+}
+
+///Mixin de posicionamiento con flexbox
+///@example
+/// .footer{
+///       @include flex(row, space-around);
+/// }
+///@param {string} $jusifycontent [space-around] - Justificacion del contenido
+///@param {string} $alignitem [center] - Alinea los contenidos
+///@param {string} $direction [row] - Direccion del flexbox
+/// 
+@mixin flex($justifycontent: space-around, $alignitem: center, $direction: row){
+    display: flex;
+    justify-content: $justifycontent;
+    align-items: $alignitem;
+    flex-direction: $direction;
+}
+
+///Mixin de posicionamiento con grid
+///@example
+/// .footer{
+///     @include grid(1fr 1fr, 0);
+/// }
+///@param {string} $grid-template-columns [1fr] - Columnas del grid
+///@param {string} $grid-template-rows [1fr] - Filas del grid
+///@param {string} $grid-gap [0] - Espacio entre elementos
+/// 
+@mixin grid($grid-template-columns: 1fr, $grid-template-rows: 1fr, $grid-gap: 0){
+    display: grid;
+    grid-template-columns: 1fr repeat($grid-template-columns, minmax(min-content, 11rem)) 1fr;
+    grid-template-rows: repeat($grid-template-rows, min-content);
+    grid-gap: $grid-gap;
+};
+
+///Mixin de estilo de los iconos de fontawesome
+///@example
+/// .footer{
+///    @include fafaIcons(color(secundary), 2em);
+/// }
+///@param {string} $color [color(quinary)] - Color del icono
+///@param {string} $font-size [1.5rem] - Tamaño del icono
+/// 
+@mixin fafaIcons($color: color(quinary), $font-size: 1.5rem){
+    i{
+        font-size: $font-size;
+        margin-right: 1%;
+        color: $color;
+    }
+}
+
+///Mixin de estilo de los botones
+///@example
+/// .footer{
+///   @include button();
+/// }
+/// 
+@mixin button(){
+    button{
+        a{
+            text-decoration: none;
+            color: color(primary);
+        }
+        padding: 1%;
+        background-color: color(secundary);
+        border: none;
+        color: color(primary);
+    }
+    button:hover{
+        color: color(secundary);
+        background-color: color(quinary);
+    }
+}
+
+///Mixin de estilo de otro tipo de boton
+///@example
+/// .footer{
+///  @include button2();
+/// }
+/// 
+@mixin button2(){
+    button{
+        width: 90%;
+        margin-bottom: 3%;
+        a{
+            text-decoration: none;
+            color: color(primary);
+            font-size: 2em;
+        }
+        padding: 3%;
+        background-color: color(secundary);
+        border: none;
+        color: color(primary);
+    }
+    button:hover{
+        color: color(primary);
+        background-color: color(terciary);
+    }
+}
+
+
+

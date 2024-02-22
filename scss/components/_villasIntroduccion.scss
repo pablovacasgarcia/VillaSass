@@ -1,0 +1,24 @@
+/// Componente: cabacera villas
+#villas-introduccion {
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 1 / 2; // Ocupa la fila 1 a la 2 en la rejilla
+    @include flex($justifycontent: flex-end, $alignitem: center, $direction: column); // Utiliza mixins para flexbox con justificación al final, alineación vertical al centro y dirección de columna
+    background-color: color(secundary); // Color de fondo secundario
+    margin-top: 1%; // Margen superior del 1%
+    color: color(primary); // Color del texto primario
+    text-align: center; // Alineación del texto al centro
+    padding: 2%; // Relleno interno del 2%
+
+    .villas-intro {
+        height: 70%; // Altura del 70%
+    }
+}
+
+// Mediaquery
+@include response(md) {
+    #villas-introduccion {
+        height: 20rem; // Altura de 20rem en tamaños de pantalla mediano
+    }
+}
+
+    

@@ -1,0 +1,79 @@
+/// Componente: cartas que giran
+.cartasFlip {
+  grid-row: 6 / 7; // Ocupa la fila 6 a la 7 en la rejilla
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+  @include flex(); // Utiliza mixins para flexbox
+
+  margin: 10vh; // Margen externo de 10vh
+
+  .flip-card {
+      background-color: transparent;
+      width: 20vw; // Ancho de la tarjeta de volteo
+      height: 60vh; // Altura de la tarjeta de volteo
+      perspective: 1000px; // Define la perspectiva de la transformación 3D
+
+      &:hover .flip-card-inner {
+          transform: rotateY(180deg); // Voltea la tarjeta al hacer hover
+          cursor: pointer; // Cambia el cursor a puntero
+      }
+
+      .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.8s; // Transición suave de la transformación
+          transform-style: preserve-3d; // Mantiene la perspectiva
+
+          .flip-card-front, .flip-card-back {
+              box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2); // Sombra para la tarjeta
+              position: absolute;
+              @include flex($direction: column, $justifycontent: center); // Flexbox centrado verticalmente
+              width: 100%;
+              height: 100%;
+              -webkit-backface-visibility: hidden; // Evita el parpadeo en algunos navegadores
+              backface-visibility: hidden; // Evita que se vea el lado de atrás antes de la rotación
+              border: 1px solid color(secundary); // Borde con color secundario
+              border-radius: 1rem; // Borde redondeado
+          }
+
+          .flip-card-front {
+              img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; // Ajusta la imagen al tamaño de la tarjeta
+                  border-radius: 1rem;
+              }
+          }
+
+          .flip-card-back {
+              background: linear-gradient(120deg, rgb(224, 199, 135) 30%, color(secundary) 88%, rgb(245, 226, 179) 40%, rgb(209, 177, 97) 78%); // Fondo con degradado
+              color: white; // Color del texto blanco
+              transform: rotateY(180deg); // Voltea la tarjeta hacia atrás
+              text-align: left; // Alineación del texto a la izquierda
+
+              p {
+                  max-width: 80%; // Ancho máximo del párrafo
+              }
+          }
+
+          .title {
+              font-size: size(sm); // Tamaño de fuente pequeño
+              font-weight: weight(bold); // Fuente en negrita
+              text-align: center; // Alineación del texto al centro
+              margin: 0; // Margen cero
+          }
+      }
+  }
+}
+
+// Mediaquery
+@include response(xl) {
+  .cartasFlip {
+      flex-direction: column; // Cambia la dirección de flexbox a columna en tamaños extra grandes
+      gap: 2rem; // Espacio entre elementos de 2rem
+
+      .flip-card {
+          width: 50vw; // Ancho de la tarjeta de volteo al 50% del ancho de la ventana en tamaños extra grandes
+      }
+  }
+}

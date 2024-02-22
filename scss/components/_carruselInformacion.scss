@@ -1,0 +1,18 @@
+#carouselExampleInterval {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    background-color: color(quinary);
+    padding: 5%;
+    text-align: center; 
+    
+    .carousel-item {
+        font-size: 1em;
+        padding: 1%; 
+
+        h2 {
+            color: color(secundary);
+            margin-bottom: 5%; 
+        }
+    }
+}       
+  

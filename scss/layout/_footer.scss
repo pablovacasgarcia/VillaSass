@@ -1,0 +1,53 @@
+/// Componente: footer
+footer {
+    @include flex($alignitem: none); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+    padding: 3%; // Relleno interno del 3%
+
+    .footer-div {
+        border-top: 2px solid color(secundary); // Borde superior de 2px sólido con color secundario
+        width: 33.3%; // Ancho del 33.3%
+        text-align: center; // Alineación del texto al centro
+
+        #footer-links {
+            @include flex($alignitem: none, $justifycontent: center); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio y justificación al centro
+            width: 100%; // Ancho del 100%
+
+            div {
+                width: 50%; // Ancho del 50%
+                border: none; // Sin borde
+            }
+
+            @include fafaIcons(color(quaternary), 2rem); // Utiliza mixins para iconos FontAwesome con color cuaternario y tamaño de fuente de 2rem
+        }
+    }
+
+    h5 {
+        color: color(secundary); // Color del texto secundario
+        margin-top: 3%; // Margen superior del 3%
+        font-size: 1.2em; // Tamaño de fuente de 1.2em
+        height: 20%; // Altura del 20%
+    }
+
+    p {
+        margin: 0.2%; // Margen del 0.2%
+    }
+}
+
+// Mediaquery
+@include response(md) {
+    footer {
+        flex-direction: column; // Cambia la dirección de flexbox a columna
+        align-items: center; // Alinea los elementos al centro
+
+        .footer-div {
+            width: 100%; // Ancho del 100%
+            border-bottom: none; // Sin borde inferior
+            padding: 2%; // Relleno interno del 2%
+        }
+
+        h5 {
+            width: 100%; // Ancho del 100%
+            text-align: center; // Alineación del texto al centro
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/// Componente: Facilidades (amenities)
+#amenities-section {
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    background-color: lightgray; // Color de fondo gris claro
+
+    div {
+        width: 100%; // Ancho completo del contenedor
+        height: 100%; // Altura completa del contenedor
+        overflow: hidden; // Oculta el desbordamiento del contenido
+        color: black; // Color del texto negro
+        padding: 5%; // Relleno interno del 5% del contenedor
+    }
+}

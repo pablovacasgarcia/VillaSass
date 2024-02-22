@@ -1,0 +1,23 @@
+/// Componente: carrusel principal
+#carouselExampleIndicators {
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 2 / 3; // Ocupa la fila 2 a la 3 en la rejilla
+    height: 40rem; // Altura del carrusel
+
+    .carousel {
+        height: 100%; // Altura del carrusel al 100%
+        
+        .carousel-inner {
+            height: inherit; // Hereda la altura del contenedor padre
+
+            .carousel-item {
+                height: inherit; // Hereda la altura del contenedor padre
+
+                img {
+                    height: inherit; // Hereda la altura del contenedor padre
+                    object-fit: cover; // Ajusta la imagen al tamaño del contenedor sin deformarla
+                }
+            }
+        }
+    }
+}

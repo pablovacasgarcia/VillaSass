@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VillaSass</title>
+
+  <!-- Bibliotecas externas de CSS y JavaScript -->
+  <!-- build:css assets/css/styles.min.css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- /build -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Sección del encabezado -->
+  <header>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Logo de la empresa -->
+        <a class="navbar-brand" href="./index.html"><img src="./images/Logo.png" alt="logo-empresa"></a>
+
+        <!-- Botón de alternar navegación para dispositivos móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistaVillas.html">Villas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistaVillas.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistaVillas.html">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistaVillas.html">Reservas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistaVillas.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./vistaVillas.html">Favoritos</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Sección de introducción -->
+    <section id="villas-introduccion">
+      <div class="villas-intro">
+        <!-- Título y texto introductorio -->
+          <div class="villas-intro1">
+              <h1>Destinations</h1>
+              <p>Discover the best places to stay in the world</p>
+          </div>
+      </div>
+
+      <!-- Formulario de búsqueda de villas -->
+      <div class="villas-search">
+        <div><i class="fa fa-calendar-check-o"></i> <i class="	fa fa-sun-o"></i> <i class="	fa fa-car"></i> </div>
+        <!-- Campos de fecha y número de habitaciones -->
+        <div class="inputs">
+          <label for="">Llegada</label><input type="date" name="" id="">
+          <label for="">Salida</label><input type="date" name="" id="">
+          <label for="">Habitaciones</label><input type="number" name="" id="" min="1" value="1">
+        </div>
+        <button>Buscar</button>
+      </div>
+    </section>
+
+    <!-- Carrusel de imágenes -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <!-- Indicadores del carrusel -->
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+  
+      </div>
+
+      <!-- Contenido del carrusel -->
+      <section class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/casa1.webp"
+              class="d-block w-100" alt="foto-carruselPrincipal-venecia">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/casa2.jpeg"
+              class="d-block w-100" alt="foto-carruselPrincipal-villaLarga">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/casa3.webp"
+              class="d-block w-100" alt="foto-carruselPrincipal-DistanciaVilla">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/casa4.jpg"
+              class="d-block w-100" alt="foto-carruselPrincipal-Umbria">
+          </div>
+        </div>
+        <!-- Botones de navegación del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+    </div>
+
+    <!-- Sección de publicidad -->
+    <section id="publicidad-descanso">
+      <div class="div-principal"> 
+          <h1>VILLAS DE LUJO Y ALQUILERES VACACIONALES</h1>
+          <div class="div-secundario">
+            <div>
+              <img src="./images/cap4.JPG" alt="logo-etiqueta">
+              <div>
+                <h4>OFERTAS ESPECIALES</h4>
+                <p>¡Descubre nuestras últimas ofertas para los mejores alquileres de villas de lujo!</p>
+              </div>
+            </div>
+            <div>
+              <img src="./images/cap1.JPG" alt="logo-certificado">
+              <div>
+                <h4>30 AÑOS DE EXPERIENCIA</h4>
+                <p>Inspeccionamos personalmente las mejores villas en alquiler
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="./images/cap2.JPG" alt="logo-señor">
+              <div>
+                <h4>SERVICIO DESTACADO
+                </h4>
+                <p>Podemos diseñar a medida tus vacaciones con nuestro equipo de conserjes de primera clase</p>
+              </div>
+            </div>
+            <div>
+              <img src="./images/cap3.JPG" alt="logo-italia-mapa">
+              <div>
+                <h4>POR TODO EL MUNDO</h4>
+                <p>Tu mejor experto de cada región para tu estancia en villas de vacaciones de lujo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Sección de tarjetas -->
+    <section id="cards" class="">
+      <div id="cartas-general">
+        <div id="carta">
+          <div><img src="./images/destination-beach-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif"
+              alt="foto-playa"></div>
+          <div>
+            <i class="fa fa-ship"></i>
+            <h5>VILLAS DE PLAYA</h5>
+          </div>
+          <p>La colección más llamativa y única de villas para tu escapada de lujo a la playa</p>
+        </div>
+        <div id="carta">
+          <div><img src="./images/destination-family-friendly-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif"
+              alt="foto-villa-familia"></div>
+          <div>
+            <i class="fa fa-child"></i> 
+            <h5>AMIGABLES PARA FAMILIAS</h5>
+          </div>
+          <p>Villas de vacaciones familiares diseñadas pensando en los niños</p>
+        </div>
+      <div id="carta">
+        <div><img src="./images/destination-contemporary-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif" class="card-img-top" alt="foto-villa-contemporanea">
+        </div>
+        <div>
+          <i class="fa fa-coffee"></i>
+          <h5>VILLAS MODERNAS</h5>
+        </div>
+        <p>Interiores elegantes y tecnología de última generación, encuentra una mezcla de autenticidad e innovación en una de las mejores casas de diseño de Home In Italy</p>
+      </div>
+      <div id="carta">
+        <div><img src="./images/destination-large-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif" alt="foto-villa-larga">
+        </div>
+        <div>
+          <i class='fa fa-car'></i>
+          <h5>VILLAS GRANDES</h5>
+        </div>
+        <p>Las villas perfectas para reuniones familiares o encuentros con amigos, ¡brinda por la salud y la felicidad de todos con estilo!</p>
+      </div>
+      <div id="carta">
+        <div><img src="./images/destination-traditional-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif" alt="foto-villa-tradicional">
+        </div>
+        <div>
+          <i class="fa fa-home"></i>
+          <h5>VILLAS TRADICIONALES</h5>
+        </div>
+        <p>Una magnífica selección de los retiros campestres más elegantes en alquiler, en contacto con la naturaleza, la historia y la tradición italiana</p>
+      </div>
+      </div>
+    </section>
+
+    <!-- Sección de tarjetas que giran -->
+    <section class="cartasFlip">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <img src="images/card1.jpg" alt="Card 1">
+              </div>
+              <div class="flip-card-back">
+                  <p class="title">Lujo escondido</p>
+                  <p>Entre la fronda densa del bosque, se alzan majestuosas las casas de lujo, refugios de opulencia entre la naturaleza. Sus ventanas enmarcan vistas idílicas de árboles centenarios y arroyos cristalinos, invitando al sosiego y la contemplación. En este enclave de exclusividad, la serenidad se fusiona con el confort para ofrecer una experiencia única en medio del verdor boscoso.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/card2.jpg" alt="Card 2">
+              </div>
+              <div class="flip-card-back">
+                  <p class="title">No solo fachada</p>
+                  <p>En la sencillez de las casas humildes, se descubre la grandeza de paisajes que roban el aliento. Sus paredes modestas se erigen como testigos silenciosos de la majestuosidad de montañas y valles que se extienden hasta el horizonte. En este rincón de humildad y belleza natural, la vida se celebra en cada amanecer y atardecer, recordando la verdadera esencia de la felicidad.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/card3.jpg" alt="Card 3">
+              </div>
+              <div class="flip-card-back">
+                  <p class="title">Otro nivel</p>
+                  <p>Majestuosas las mansiones, palacios modernos que desafían la naturaleza con su esplendor. Sus torres de cristal y acero se alzan hacia el cielo, ofreciendo vistas panorámicas de valles y lagos. En este reino de opulencia, la elegancia y el lujo se funden con la serenidad del entorno, creando un oasis de confort y sofisticación en medio de la naturaleza.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/card4.jpeg" alt="Card 4">
+            </div>
+            <div class="flip-card-back">
+                <p class="title">En ciudad</p>
+                <p>En el bullicio urbano, se elevan los pisos de la ciudad, refugios verticales que dan vida al paisaje urbano. Desde sus balcones, se contempla el ir y venir de las calles, el constante latido de la metrópolis. En estos hogares en altura, la modernidad y la comodidad se entrelazan, ofreciendo un oasis de tranquilidad en medio del frenesí citadino.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Carrusel de opiniones de huéspedes -->
+    <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <h2>OPINIONES DE LOS HUÉSPEDES</h2>
+        <div class="carousel-item active" data-bs-interval="10000">
+          <h2>Cristiano Ronaldo<br><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
+          <p>“ ¡Nos ENCANTÓ Villa Peonia! ¡Gracias por la excelente recomendación de villa, superó todas nuestras expectativas! Nuestra propiedad y vacaciones favoritas fueron otra de Home in Italy en la Toscana hace muchos años, ¡esta fue aún mejor! Unas vacaciones de verano perfectas. ¡Todi estaba lleno de encanto y fantásticos restaurantes! ¡Continuaremos utilizando Home in Italy en el futuro ya que las propiedades son tan especiales! „</p>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <h2>Jeff Bezos<br><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
+          <p>“ Disfrutamos mucho nuestra reciente estancia en Arcelle. Fue perfecto para nuestra familia de 10. La ubicación era ideal para explorar, pero estábamos más felices al volver a casa cada día a ese hermoso lugar. El equipo de limpieza a mitad de semana fue un buen bono. Fue un placer tratar con Home in Italy desde la consulta inicial hasta nuestro último día en la villa. Hemos recomendado y seguiremos recomendando Home in Italy a amigos. También nos gustaría recomendar a nuestro chef que amablemente cocinó para nosotros. „</p>
+        </div>
+        <div class="carousel-item">
+          <h2>Fernando Alonso<br><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
+          <p>“ Disfrutamos mucho nuestra reciente estancia en Arcelle. Fue perfecto para nuestra familia de 10. La ubicación era ideal para explorar, pero estábamos más felices al volver a casa cada día a ese hermoso lugar. El equipo de limpieza a mitad de semana fue un buen bono. Fue un placer tratar con Home in Italy desde la consulta inicial hasta nuestro último día en la villa. Hemos recomendado y seguiremos recomendando Home in Italy a amigos. También nos gustaría recomendar a nuestro chef que amablemente cocinó para nosotros. „</p>
+        </div>
+      </div>
+      <!-- Botones de navegación del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+      <div class="footer-div">
+        <h5>ABOUT US</h5>
+        <p>Quienes somos</p>       
+        <p>Trabaja con nosotros</p>   
+        <p>Blog</p>
+      </div>
+      <div class="footer-div">
+        <h5>REDES SOCIALES</h5>
+        <div id="footer-links">
+          <div>
+            <p>
+            <i class="fa fa-instagram"></i>
+            <span>VillaSass</span>
+          </p>
+          <p>
+            <i class="fa fa-facebook"></i>
+            <span>VillaSass</span>
+          </p>
+        </div>
+          <div>
+            <p>
+              <i class="fa fa-twitter"></i>
+              <span>VillaSass</span>
+            </p>
+            <p>
+              <i class="fa fa-google"></i>
+              <span>VillaSass</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-div">
+        <h5>CONTACT US</h5>
+        <p>
+          <i class="fa fa-map-marker"></i>
+          <span>Address: Calle del Lujo, nº3</span>
+        </p>
+        <p>
+          <i class="fa fa-phone"></i>
+          <span>Phone: 37868332632</span>
+        </p>
+        <p>
+          <i class="fa fa-envelope"></i>
+          <span>Email: pabloellujoso@gmail.com
+      </div>
+  </footer>
+</body>
+
+</html>

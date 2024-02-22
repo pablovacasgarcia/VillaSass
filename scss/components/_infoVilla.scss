@@ -1,0 +1,105 @@
+/// Componente: informacion detallada villa
+#section-info-villa {
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    @include flex($alignitem: stretch); // Utiliza mixins para flexbox
+
+    #infoVilla {
+        @include fafaIcons(color(secundary), $font-size: 1.5rem); // Utiliza mixins para iconos FontAwesome con color secundario y tamaño de fuente de 1.5rem
+        width: 60%; // Ancho del contenedor de información de la villa
+        padding: 3%; // Relleno interno del 3%
+        
+        .infoVillaContainer {
+            @include flex($alignitem: stretch); // Utiliza mixins para flexbox
+            justify-content: space-between; // Espacio uniforme entre elementos
+
+            .infoVilla1 {
+                p {
+                    margin: 0.5%; // Margen del 0.5%
+                }
+                h2 {
+                    font-family: $font-family2; // Utiliza la segunda fuente especificada
+                }
+            }
+
+            .infoVilla2 {
+                width: 20%; // Ancho del 20%
+                p {
+                    margin: 0.5%; // Margen del 0.5%
+                }
+                h1 {
+                    margin: 0.5%; // Margen del 0.5%
+                }
+                div {
+                    i {
+                        margin-right: 5%; // Margen derecho del 5%
+                    }
+                }
+                @include flex($direction: column, $alignitem: none); // Utiliza mixins para flexbox con dirección de columna
+            }
+        }
+
+        .infoVillaContainer2 {
+            margin-top: 3%; // Margen superior del 3%
+            
+            .enlaces {
+                color: color(terciary); // Color de los enlaces terciarios
+                a {
+                    margin-left: 2%; // Margen izquierdo del 2%
+                }
+            }
+            
+            .informacionDetalleVilla {
+                font-size: medium; // Tamaño de fuente medio
+                color: color(terciary); // Color terciario
+            }
+        }
+    }
+
+    #addVilla {
+        width: 40%; // Ancho del 40%
+        padding: 3%; // Relleno interno del 3%
+        text-align: center; // Alineación del texto al centro
+        color: color(secundary); // Color secundario
+
+        div {
+            width: 90%; // Ancho del 90%
+            background-color: color(quinary); // Color de fondo quinario
+            padding: 3%; // Relleno interno del 3%
+            
+            li {
+                list-style: none; // Quita los estilos de lista
+            }
+            
+            hr {
+                border: 1.5px solid; // Borde de 1.5px sólido
+            }
+            
+            @include button2(); // Utiliza mixins para estilos de botón
+        }
+    }
+}
+
+// Mediaquery
+@include response(md) {
+    #section-info-villa {
+        flex-direction: column; // Cambia la dirección de flexbox a columna en dispositivos de tamaño medio
+
+        #infoVilla {
+            width: 100%; // Ancho del 100%
+
+            .infoVillaContainer {
+                flex-direction: column; // Cambia la dirección de flexbox a columna
+                .infoVilla2 {
+                    width: 100%; // Ancho del 100%
+                }
+            }
+        }
+
+        #addVilla {
+            width: 100%; // Ancho del 100%
+            div {
+                width: 100%; // Ancho del 100%
+            }
+        }
+    }
+}

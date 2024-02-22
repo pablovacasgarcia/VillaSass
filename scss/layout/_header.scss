@@ -1,0 +1,9 @@
+/// Componente: header
+header {
+    position: fixed; // Posición fija
+    top: 0; // Desde la parte superior
+    z-index: 100; // Índice de apilamiento para que esté sobre otros elementos
+    width: 100%; // Ancho completo
+    box-shadow: 0px 0px 10px gray; // Sombra con desplazamiento de 0px horizontal y vertical, y 10px de desenfoque, en color gris
+    background-color: rgba(255, 255, 255, 0.9); // Color de fondo blanco con opacidad del 90%
+}

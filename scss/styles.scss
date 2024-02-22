@@ -1,0 +1,23 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import './variable';
+@import './mixin';
+@import './base';
+
+@import './layout/main';
+@import './layout/footer';
+@import './layout/header';
+
+@import './components/seccionCartas';
+@import './components/carruselPrincipal';
+@import './components/carruselInformacion';
+@import './components/seccionPublicidadDescanso';
+@import './components/vistaVillas';
+@import './components/vistaVillaUnica';
+@import './components/villasIntroduccion';
+@import './components/infoVilla';
+@import './components/amenitiesSection';
+@import './components/logo';
+@import './components/villasSearch';
+@import './components/navBar';
+@import './components/cardFlipSection';

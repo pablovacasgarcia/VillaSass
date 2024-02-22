@@ -1,0 +1,6 @@
+#imagenPrincipal {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  width: 100%; }
+  #imagenPrincipal img {
+    width: 100%; }

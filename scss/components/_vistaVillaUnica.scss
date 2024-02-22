@@ -1,0 +1,10 @@
+/// Componente: imagen principal villa unica
+#imagenPrincipal {
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 1 / 2; // Ocupa la fila 1 a la 2 en la rejilla
+    width: 100%; // Ancho del 100%
+
+    img {
+        width: 100%; // Ancho de la imagen al 100%
+    }
+}

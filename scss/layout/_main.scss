@@ -1,0 +1,5 @@
+/// Componente: main
+main {
+    margin-top: 5rem; // Margen superior de 5rem
+    @include grid(8, 8); // Utiliza mixins para crear una cuadrícula de 8 columnas y 8 filas
+}

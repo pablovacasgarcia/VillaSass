@@ -1,0 +1,586 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Villasass - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Villasass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Villasass - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="colores"><a href="#colores">colores</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="colores-variable"><a href="#colores-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colores" data-name="colors" data-type="variable"><a href="#colores-variable-colors">colors</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="colores-function"><a href="#colores-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color" data-type="function"><a href="#colores-function-color">color</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="fuentes"><a href="#fuentes">fuentes</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="fuentes-variable"><a href="#fuentes-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="fuentes" data-name="font-family" data-type="variable"><a href="#fuentes-variable-font-family">font-family</a></li><li class="sidebar__item sassdoc__item" data-group="fuentes" data-name="font-family2" data-type="variable"><a href="#fuentes-variable-font-family2">font-family2</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="pesos"><a href="#pesos">pesos</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="pesos-variable"><a href="#pesos-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="pesos" data-name="fonts-weight" data-type="variable"><a href="#pesos-variable-fonts-weight">fonts-weight</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="pesos-function"><a href="#pesos-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="pesos" data-name="weight" data-type="function"><a href="#pesos-function-weight">weight</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="tamaños"><a href="#tamaños">tamaños</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="tamaños-variable"><a href="#tamaños-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="tamaños" data-name="font-sizes" data-type="variable"><a href="#tamaños-variable-font-sizes">font-sizes</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="tamaños-function"><a href="#tamaños-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="tamaños" data-name="size" data-type="function"><a href="#tamaños-function-size">size</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="*" data-type="css"><a href="#undefined-css-*">*</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#amenities-section" data-type="css"><a href="#undefined-css-#amenities-section">#amenities-section</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".cartasFlip" data-type="css"><a href="#undefined-css-.cartasFlip">.cartasFlip</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".cartasFlip" data-type="css"><a href="#undefined-css-.cartasFlip">.cartasFlip</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#carouselExampleIndicators" data-type="css"><a href="#undefined-css-#carouselExampleIndicators">#carouselExampleIndicators</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#section-info-villa" data-type="css"><a href="#undefined-css-#section-info-villa">#section-info-villa</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".navbar-brand" data-type="css"><a href="#undefined-css-.navbar-brand">.navbar-brand</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".navbar-nav a" data-type="css"><a href="#undefined-css-.navbar-nav a">.navbar-nav a</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#cards" data-type="css"><a href="#undefined-css-#cards">#cards</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#publicidad-descanso" data-type="css"><a href="#undefined-css-#publicidad-descanso">#publicidad-descanso</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#villas-introduccion" data-type="css"><a href="#undefined-css-#villas-introduccion">#villas-introduccion</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".villas-search" data-type="css"><a href="#undefined-css-.villas-search">.villas-search</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#imagenPrincipal" data-type="css"><a href="#undefined-css-#imagenPrincipal">#imagenPrincipal</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#villas-section" data-type="css"><a href="#undefined-css-#villas-section">#villas-section</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="footer" data-type="css"><a href="#undefined-css-footer">footer</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="header" data-type="css"><a href="#undefined-css-header">header</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="main" data-type="css"><a href="#undefined-css-main">main</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="response" data-type="mixin"><a href="#undefined-mixin-response">response</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="flex" data-type="mixin"><a href="#undefined-mixin-flex">flex</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="grid" data-type="mixin"><a href="#undefined-mixin-grid">grid</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="fafaIcons" data-type="mixin"><a href="#undefined-mixin-fafaIcons">fafaIcons</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button" data-type="mixin"><a href="#undefined-mixin-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button2" data-type="mixin"><a href="#undefined-mixin-button2">button2</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="colores"><div class="container">colores</div></h1><section class="main__sub-section" id="colores-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="colores-variable-colors"><h3 class="item__heading"><a class="item__name" href="#variable-colors">colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$colors: (
+    primary: white,
+    secundary: rgb(202, 161, 57),
+    terciary: gray,
+    quaternary: black,
+    quinary: lightgray,
+    );</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de colores</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li></ul></section></section><section class="main__sub-section" id="colores-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="colores-function-color"><h3 class="item__heading"><a class="item__name" href="#function-color">color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function color($color-name) { 
+    @return map-get($colors, $color-name);
+ }" data-collapsed="@function color($color-name) { ... }"><code>@function color($color-name) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función que devuelve un color del vector colores</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color-name</code></th><td data-label="desc"><ul><li>Color del vector colores</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code> &mdash;<p>Color</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#colores-variable-colors"><code>colors</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button2"><code>button2</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button2"><code>button2</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button2"><code>button2</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button2"><code>button2</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button2"><code>button2</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="fuentes"><div class="container">fuentes</div></h1><section class="main__sub-section" id="fuentes-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="fuentes-variable-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-font-family">font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family: &quot;Nunito&quot;, sans-serif;</code></pre></div></section><section class="main__item container item" id="fuentes-variable-font-family2"><h3 class="item__heading"><a class="item__name" href="#variable-font-family2">font-family2</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family2: &#39;Tilt Neon&#39;;</code></pre></div></section></section></section><section class="main__section"><h1 class="main__heading" id="pesos"><div class="container">pesos</div></h1><section class="main__sub-section" id="pesos-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="pesos-variable-fonts-weight"><h3 class="item__heading"><a class="item__name" href="#variable-fonts-weight">fonts-weight</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$fonts-weight: (
+    &quot;ligth&quot;: 500,
+    &quot;regular&quot;: 600,
+    &quot;bold&quot;: 800
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de pesos</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#pesos-function-weight"><code>weight</code></a></li></ul></section></section><section class="main__sub-section" id="pesos-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="pesos-function-weight"><h3 class="item__heading"><a class="item__name" href="#function-weight">weight</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function weight($font-weight) { 
+    @return map-get($fonts-weight, $font-weight);
+ }" data-collapsed="@function weight($font-weight) { ... }"><code>@function weight($font-weight) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función que devuelve un peso del vector pesos</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$font-weight</code></th><td data-label="desc"><ul><li>Nombre del vector pesos</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Talla</code> &mdash;<p>Peso</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#pesos-variable-fonts-weight"><code>fonts-weight</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="tamaños"><div class="container">tamaños</div></h1><section class="main__sub-section" id="tamaños-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="tamaños-variable-font-sizes"><h3 class="item__heading"><a class="item__name" href="#variable-font-sizes">font-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-sizes: (
+    xl: 3rem,
+    xxl: 6rem,
+    sm: 1.8rem,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de tamaños</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#tamaños-function-size"><code>size</code></a></li></ul></section></section><section class="main__sub-section" id="tamaños-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="tamaños-function-size"><h3 class="item__heading"><a class="item__name" href="#function-size">size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function size($font-size) { 
+    @return map-get($font-sizes, $font-size);
+ }" data-collapsed="@function size($font-size) { ... }"><code>@function size($font-size) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función que devuelve un tamaño del vector tamaños</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$font-size</code></th><td data-label="desc"><ul><li>Nombre del vector tamaños</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Tamaño</code> &mdash;<p>Tamaño</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#tamaños-variable-font-sizes"><code>font-sizes</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-*"><h3 class="item__heading"><a class="item__name" href="#css-*">*</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>* {
+  margin: 0; // Establece el margen exterior en 0 para todos los elementos
+    padding: 0; // Establece el relleno interior en 0 para todos los elementos
+    font-family: $font-family; // Utiliza la variable $font-family para establecer la fuente para todos los elementos
+    box-sizing: border-box; // Incluye el borde y el relleno en el cálculo del ancho y la altura del elemento
+}</code>" data-collapsed="* { ... }"><code>* { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Estilos generales</p></div></section><section class="main__item container item" id="undefined-css-#amenities-section"><h3 class="item__heading"><a class="item__name" href="#css-#amenities-section">#amenities-section</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#amenities-section {
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    background-color: lightgray; // Color de fondo gris claro
+
+    div {
+        width: 100%; // Ancho completo del contenedor
+        height: 100%; // Altura completa del contenedor
+        overflow: hidden; // Oculta el desbordamiento del contenido
+        color: black; // Color del texto negro
+        padding: 5%; // Relleno interno del 5% del contenedor
+    }
+}</code>" data-collapsed="#amenities-section { ... }"><code>#amenities-section { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Facilidades (amenities)</p></div></section><section class="main__item container item" id="undefined-css-.cartasFlip"><h3 class="item__heading"><a class="item__name" href="#css-.cartasFlip">.cartasFlip</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.cartasFlip {
+  grid-row: 6 / 7; // Ocupa la fila 6 a la 7 en la rejilla
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+  @include flex(); // Utiliza mixins para flexbox
+
+  margin: 10vh; // Margen externo de 10vh
+
+  .flip-card {
+      background-color: transparent;
+      width: 20vw; // Ancho de la tarjeta de volteo
+      height: 60vh; // Altura de la tarjeta de volteo
+      perspective: 1000px; // Define la perspectiva de la transformación 3D
+
+      &amp;:hover .flip-card-inner {
+          transform: rotateY(180deg); // Voltea la tarjeta al hacer hover
+          cursor: pointer; // Cambia el cursor a puntero
+      }
+
+      .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.8s; // Transición suave de la transformación
+          transform-style: preserve-3d; // Mantiene la perspectiva
+
+          .flip-card-front, .flip-card-back {
+              box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2); // Sombra para la tarjeta
+              position: absolute;
+              @include flex($direction: column, $justifycontent: center); // Flexbox centrado verticalmente
+              width: 100%;
+              height: 100%;
+              -webkit-backface-visibility: hidden; // Evita el parpadeo en algunos navegadores
+              backface-visibility: hidden; // Evita que se vea el lado de atrás antes de la rotación
+              border: 1px solid color(secundary); // Borde con color secundario
+              border-radius: 1rem; // Borde redondeado
+          }
+
+          .flip-card-front {
+              img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; // Ajusta la imagen al tamaño de la tarjeta
+                  border-radius: 1rem;
+              }
+          }
+
+          .flip-card-back {
+              background: linear-gradient(120deg, rgb(224, 199, 135) 30%, color(secundary) 88%, rgb(245, 226, 179) 40%, rgb(209, 177, 97) 78%); // Fondo con degradado
+              color: white; // Color del texto blanco
+              transform: rotateY(180deg); // Voltea la tarjeta hacia atrás
+              text-align: left; // Alineación del texto a la izquierda
+
+              p {
+                  max-width: 80%; // Ancho máximo del párrafo
+              }
+          }
+
+          .title {
+              font-size: size(sm); // Tamaño de fuente pequeño
+              font-weight: weight(bold); // Fuente en negrita
+              text-align: center; // Alineación del texto al centro
+              margin: 0; // Margen cero
+          }
+      }
+  }
+}</code>" data-collapsed=".cartasFlip { ... }"><code>.cartasFlip { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: cartas que giran</p></div></section><section class="main__item container item" id="undefined-css-.cartasFlip"><h3 class="item__heading"><a class="item__name" href="#css-.cartasFlip">.cartasFlip</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.cartasFlip {
+  grid-row: 6 / 7; // Ocupa la fila 6 a la 7 en la rejilla
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    @include flex(); // Utiliza mixins para flexbox
+
+    margin: 10vh; // Margen externo de 10vh
+
+    .flip-card {
+        background-color: transparent;
+        width: 20vw; // Ancho de la tarjeta de volteo
+        height: 60vh; // Altura de la tarjeta de volteo
+        perspective: 1000px; // Define la perspectiva de la transformación 3D
+
+        &amp;:hover .flip-card-inner {
+            transform: rotateY(180deg); // Voltea la tarjeta al hacer hover
+            cursor: pointer; // Cambia el cursor a puntero
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s; // Transición suave de la transformación
+            transform-style: preserve-3d; // Mantiene la perspectiva
+
+            .flip-card-front, .flip-card-back {
+                box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2); // Sombra para la tarjeta
+                position: absolute;
+                @include flex($direction: column, $justifycontent: center); // Flexbox centrado verticalmente
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden; // Evita el parpadeo en algunos navegadores
+                backface-visibility: hidden; // Evita que se vea el lado de atrás antes de la rotación
+                border: 1px solid color(secundary); // Borde con color secundario
+                border-radius: 1rem; // Borde redondeado
+            }
+
+            .flip-card-front {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; // Ajusta la imagen al tamaño de la tarjeta
+                    border-radius: 1rem;
+                }
+            }
+
+            .flip-card-back {
+                background: linear-gradient(120deg, rgb(224, 199, 135) 30%, color(secundary) 88%, rgb(245, 226, 179) 40%, rgb(209, 177, 97) 78%); // Fondo con degradado
+                color: white; // Color del texto blanco
+                transform: rotateY(180deg); // Voltea la tarjeta hacia atrás
+                text-align: left; // Alineación del texto a la izquierda
+
+                p {
+                    max-width: 80%; // Ancho máximo del párrafo
+                }
+            }
+
+            .title {
+                font-size: size(sm); // Tamaño de fuente pequeño
+                font-weight: weight(bold); // Fuente en negrita
+                text-align: center; // Alineación del texto al centro
+                margin: 0; // Margen cero
+            }
+        }
+    }
+}</code>" data-collapsed=".cartasFlip { ... }"><code>.cartasFlip { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: carrusel informacion (usuarios)</p></div></section><section class="main__item container item" id="undefined-css-#carouselExampleIndicators"><h3 class="item__heading"><a class="item__name" href="#css-#carouselExampleIndicators">#carouselExampleIndicators</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#carouselExampleIndicators {
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 2 / 3; // Ocupa la fila 2 a la 3 en la rejilla
+    height: 40rem; // Altura del carrusel
+
+    .carousel {
+        height: 100%; // Altura del carrusel al 100%
+        
+        .carousel-inner {
+            height: inherit; // Hereda la altura del contenedor padre
+
+            .carousel-item {
+                height: inherit; // Hereda la altura del contenedor padre
+
+                img {
+                    height: inherit; // Hereda la altura del contenedor padre
+                    object-fit: cover; // Ajusta la imagen al tamaño del contenedor sin deformarla
+                }
+            }
+        }
+    }
+}</code>" data-collapsed="#carouselExampleIndicators { ... }"><code>#carouselExampleIndicators { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: carrusel principal</p></div></section><section class="main__item container item" id="undefined-css-#section-info-villa"><h3 class="item__heading"><a class="item__name" href="#css-#section-info-villa">#section-info-villa</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#section-info-villa {
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    @include flex($alignitem: stretch); // Utiliza mixins para flexbox
+
+    #infoVilla {
+        @include fafaIcons(color(secundary), $font-size: 1.5rem); // Utiliza mixins para iconos FontAwesome con color secundario y tamaño de fuente de 1.5rem
+        width: 60%; // Ancho del contenedor de información de la villa
+        padding: 3%; // Relleno interno del 3%
+        
+        .infoVillaContainer {
+            @include flex($alignitem: stretch); // Utiliza mixins para flexbox
+            justify-content: space-between; // Espacio uniforme entre elementos
+
+            .infoVilla1 {
+                p {
+                    margin: 0.5%; // Margen del 0.5%
+                }
+                h2 {
+                    font-family: $font-family2; // Utiliza la segunda fuente especificada
+                }
+            }
+
+            .infoVilla2 {
+                width: 20%; // Ancho del 20%
+                p {
+                    margin: 0.5%; // Margen del 0.5%
+                }
+                h1 {
+                    margin: 0.5%; // Margen del 0.5%
+                }
+                div {
+                    i {
+                        margin-right: 5%; // Margen derecho del 5%
+                    }
+                }
+                @include flex($direction: column, $alignitem: none); // Utiliza mixins para flexbox con dirección de columna
+            }
+        }
+
+        .infoVillaContainer2 {
+            margin-top: 3%; // Margen superior del 3%
+            
+            .enlaces {
+                color: color(terciary); // Color de los enlaces terciarios
+                a {
+                    margin-left: 2%; // Margen izquierdo del 2%
+                }
+            }
+            
+            .informacionDetalleVilla {
+                font-size: medium; // Tamaño de fuente medio
+                color: color(terciary); // Color terciario
+            }
+        }
+    }
+
+    #addVilla {
+        width: 40%; // Ancho del 40%
+        padding: 3%; // Relleno interno del 3%
+        text-align: center; // Alineación del texto al centro
+        color: color(secundary); // Color secundario
+
+        div {
+            width: 90%; // Ancho del 90%
+            background-color: color(quinary); // Color de fondo quinario
+            padding: 3%; // Relleno interno del 3%
+            
+            li {
+                list-style: none; // Quita los estilos de lista
+            }
+            
+            hr {
+                border: 1.5px solid; // Borde de 1.5px sólido
+            }
+            
+            @include button2(); // Utiliza mixins para estilos de botón
+        }
+    }
+}</code>" data-collapsed="#section-info-villa { ... }"><code>#section-info-villa { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: informacion detallada villa</p></div></section><section class="main__item container item" id="undefined-css-.navbar-brand"><h3 class="item__heading"><a class="item__name" href="#css-.navbar-brand">.navbar-brand</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.navbar-brand {
+  width: 60%; // Ancho del 60%
+
+    img {
+        width: 8rem; // Ancho de la imagen de 8rem
+    }
+}</code>" data-collapsed=".navbar-brand { ... }"><code>.navbar-brand { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Logo</p></div></section><section class="main__item container item" id="undefined-css-.navbar-nav a"><h3 class="item__heading"><a class="item__name" href="#css-.navbar-nav a">.navbar-nav a</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.navbar-nav a {
+  position: relative; // Posición relativa para el enlace
+
+    &amp;::after {
+        content: &#39;&#39;; // Contenido pseudo-elemento
+        position: absolute; // Posición absoluta para el pseudo-elemento
+        bottom: 10px; // Distancia al fondo del enlace
+        left: 10%; // Posición inicial del pseudo-elemento
+        width: 0%; // Ancho inicial del pseudo-elemento
+        height: 2px; // Altura del pseudo-elemento
+        background-color: color(terciary); // Color de fondo del pseudo-elemento
+        transition: width 0.5s ease-in-out; // Transición suave del ancho del pseudo-elemento
+    }
+
+    &amp;:hover::after {
+        width: 80%; // Ancho del pseudo-elemento al hacer hover
+    }
+}</code>" data-collapsed=".navbar-nav a { ... }"><code>.navbar-nav a { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Barra de navegación</p></div></section><section class="main__item container item" id="undefined-css-#cards"><h3 class="item__heading"><a class="item__name" href="#css-#cards">#cards</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#cards {
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 4 / 5; // Ocupa la fila 4 a la 5 en la rejilla
+
+    #cartas-general {
+        @include flex($alignitem: none); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+        width: 100%; // Ancho del contenedor de las cartas
+
+        #carta {
+            width: 20%; // Ancho de cada carta al 20% del contenedor
+            height: 20%; // Altura de cada carta al 20% del contenedor
+            background-color: color(terniary); // Color de fondo de la carta
+            
+            div {
+                width: 100%; // Ancho del div al 100%
+                height: 100%; // Altura del div al 100%
+                overflow: hidden; // Oculta el contenido que desborda
+            }
+
+            div &gt; img {
+                width: 100%; // Ancho de la imagen al 100%
+                height: 100%; // Altura de la imagen al 100%
+                transition: transform 0.25s; // Transición suave de la transformación
+                margin-bottom: 10%; // Margen inferior del 10%
+
+            }
+
+            div &gt; img:hover {
+                transform: scale(1.1); // Escala la imagen al 110% al hacer hover
+            }
+
+            div {
+                text-align: center; // Alineación del texto al centro
+                @include fafaIcons(color(secundary), 2em); // Utiliza mixins para iconos FontAwesome con color secundario y tamaño de fuente de 2em
+            }
+            
+            p {
+                padding: 1em; // Relleno interno del párrafo de 1em
+            }
+        }
+    }
+}</code>" data-collapsed="#cards { ... }"><code>#cards { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: seccion cartas</p></div></section><section class="main__item container item" id="undefined-css-#publicidad-descanso"><h3 class="item__heading"><a class="item__name" href="#css-#publicidad-descanso">#publicidad-descanso</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#publicidad-descanso {
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 3 / 4; // Ocupa la fila 3 a la 4 en la rejilla
+    text-align: center; // Alineación del texto al centro
+    padding: 5%; // Relleno interno del 5%
+
+    .div-principal {
+        color: color(quaternary); // Color del texto cuaternario
+
+        h1 {
+            margin-bottom: 5%; // Margen inferior del 5%
+        }
+
+        h4 {
+            color: color(secundary); // Color secundario para el título
+            text-decoration: underline; // Subraya el texto
+        }
+    }
+
+    .div-secundario {
+        @include flex($alignitem: none); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+        flex-wrap: wrap; // Envuelve los elementos en la línea cuando no caben
+
+        img {
+            height: 100%; // Altura de la imagen al 100%
+        }
+
+        div {
+            width: 50%; // Ancho del 50%
+            @include flex($alignitem: none); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+            flex-wrap: wrap; // Envuelve los elementos en la línea cuando no caben
+
+            div {
+                width: 50%; // Ancho del 50%
+                height: 100%; // Altura del 100%
+            }
+        }
+    }
+}</code>" data-collapsed="#publicidad-descanso { ... }"><code>#publicidad-descanso { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: publicidad descanso</p></div></section><section class="main__item container item" id="undefined-css-#villas-introduccion"><h3 class="item__heading"><a class="item__name" href="#css-#villas-introduccion">#villas-introduccion</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#villas-introduccion {
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 1 / 2; // Ocupa la fila 1 a la 2 en la rejilla
+    @include flex($justifycontent: flex-end, $alignitem: center, $direction: column); // Utiliza mixins para flexbox con justificación al final, alineación vertical al centro y dirección de columna
+    background-color: color(secundary); // Color de fondo secundario
+    margin-top: 1%; // Margen superior del 1%
+    color: color(primary); // Color del texto primario
+    text-align: center; // Alineación del texto al centro
+    padding: 2%; // Relleno interno del 2%
+
+    .villas-intro {
+        height: 70%; // Altura del 70%
+    }
+}</code>" data-collapsed="#villas-introduccion { ... }"><code>#villas-introduccion { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: cabacera villas</p></div></section><section class="main__item container item" id="undefined-css-.villas-search"><h3 class="item__heading"><a class="item__name" href="#css-.villas-search">.villas-search</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.villas-search {
+  height: 30%; // Altura del 30%
+    width: 100%; // Ancho del 100%
+    @include flex($justifycontent: space-between, $alignitem: center); // Utiliza mixins para flexbox con justificación espaciada y alineación vertical al centro
+    background-color: color(primary); // Color de fondo primario
+    padding: 2%; // Relleno interno del 2%
+    color: color(quaternary); // Color del texto cuaternario
+    font-size: medium; // Tamaño de fuente medio
+    @include fafaIcons(color(secundary), 2em); // Utiliza mixins para iconos FontAwesome con color secundario y tamaño de fuente de 2em
+    
+    label {
+        margin-right: 1%; // Margen derecho del 1%
+        font-size: 1em; // Tamaño de fuente de 1em
+        margin-left: 3%; // Margen izquierdo del 3%
+    }
+
+    input {
+        margin-right: 1%; // Margen derecho del 1%
+        width: 15rem; // Ancho de 15rem
+        padding: 1%; // Relleno interno del 1%
+        min-width: 30px; // Ancho mínimo de 30px
+    }
+
+    div {
+        @include flex($justifycontent: flex-start, $alignitem: center); // Utiliza mixins para flexbox con justificación al inicio y alineación vertical al centro
+        width: 70%; // Ancho del 70%
+    }
+
+    @include button(); // Utiliza mixins para estilos de botón
+}</code>" data-collapsed=".villas-search { ... }"><code>.villas-search { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Villas Search</p></div></section><section class="main__item container item" id="undefined-css-#imagenPrincipal"><h3 class="item__heading"><a class="item__name" href="#css-#imagenPrincipal">#imagenPrincipal</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#imagenPrincipal {
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 1 / 2; // Ocupa la fila 1 a la 2 en la rejilla
+    width: 100%; // Ancho del 100%
+
+    img {
+        width: 100%; // Ancho de la imagen al 100%
+    }
+}</code>" data-collapsed="#imagenPrincipal { ... }"><code>#imagenPrincipal { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: imagen principal villa unica</p></div></section><section class="main__item container item" id="undefined-css-#villas-section"><h3 class="item__heading"><a class="item__name" href="#css-#villas-section">#villas-section</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#villas-section {
+  grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 3 / 8; // Ocupa la fila 3 a la 8 en la rejilla
+    
+    .villa-div {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; // Sombra de la caja
+        margin-top: 1%; // Margen superior del 1%
+        @include flex($alignitem: stretch); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+        @include fafaIcons(color(secundary)); // Utiliza mixins para iconos FontAwesome con color secundario
+
+        .villa-div1 {
+            width: 40%; // Ancho del 40%
+            height: auto; // Altura automática
+        }
+
+        .villa-div2 {
+            width: 60%; // Ancho del 60%
+            padding: 2%; // Relleno interno del 2%
+
+            div {
+                @include flex($alignitem: stretch); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+
+                h3 {
+                    font-family: $font-family2; // Utiliza la segunda fuente especificada
+                }
+
+                justify-content: space-between; // Espacio uniforme entre elementos
+                margin-top: 1%; // Margen superior del 1%
+
+                p {
+                    i {
+                        margin: 0; // Restablece el margen
+                    }
+                }
+
+                @include button(); // Utiliza mixins para estilos de botón
+            }
+        }
+    }
+}</code>" data-collapsed="#villas-section { ... }"><code>#villas-section { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: vista villas</p></div></section><section class="main__item container item" id="undefined-css-footer"><h3 class="item__heading"><a class="item__name" href="#css-footer">footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>footer {
+  @include flex($alignitem: none); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+    padding: 3%; // Relleno interno del 3%
+
+    .footer-div {
+        border-top: 2px solid color(secundary); // Borde superior de 2px sólido con color secundario
+        width: 33.3%; // Ancho del 33.3%
+        text-align: center; // Alineación del texto al centro
+
+        #footer-links {
+            @include flex($alignitem: none, $justifycontent: center); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio y justificación al centro
+            width: 100%; // Ancho del 100%
+
+            div {
+                width: 50%; // Ancho del 50%
+                border: none; // Sin borde
+            }
+
+            @include fafaIcons(color(quaternary), 2rem); // Utiliza mixins para iconos FontAwesome con color cuaternario y tamaño de fuente de 2rem
+        }
+    }
+
+    h5 {
+        color: color(secundary); // Color del texto secundario
+        margin-top: 3%; // Margen superior del 3%
+        font-size: 1.2em; // Tamaño de fuente de 1.2em
+        height: 20%; // Altura del 20%
+    }
+
+    p {
+        margin: 0.2%; // Margen del 0.2%
+    }
+}</code>" data-collapsed="footer { ... }"><code>footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: footer</p></div></section><section class="main__item container item" id="undefined-css-header"><h3 class="item__heading"><a class="item__name" href="#css-header">header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>header {
+  position: fixed; // Posición fija
+    top: 0; // Desde la parte superior
+    z-index: 100; // Índice de apilamiento para que esté sobre otros elementos
+    width: 100%; // Ancho completo
+    box-shadow: 0px 0px 10px gray; // Sombra con desplazamiento de 0px horizontal y vertical, y 10px de desenfoque, en color gris
+    background-color: rgba(255, 255, 255, 0.9); // Color de fondo blanco con opacidad del 90%
+}</code>" data-collapsed="header { ... }"><code>header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: header</p></div></section><section class="main__item container item" id="undefined-css-main"><h3 class="item__heading"><a class="item__name" href="#css-main">main</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>main {
+  margin-top: 5rem; // Margen superior de 5rem
+    @include grid(8, 8); // Utiliza mixins para crear una cuadrícula de 8 columnas y 8 filas
+}</code>" data-collapsed="main { ... }"><code>main { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: main</p></div></section></section><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-response"><h3 class="item__heading"><a class="item__name" href="#mixin-response">response</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin response($breakpoint) { 
+    @if($breakpoint == xl){
+        @media(max-width: 1200px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == lg){
+        @media(max-width: 992px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == md){
+        @media(max-width: 768px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == sm){
+        @media(max-width: 576px){
+            @content;
+        }
+    }
+ }" data-collapsed="@mixin response($breakpoint) { ... }"><code>@mixin response($breakpoint) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin que modifica los elementos dependiendo de la pantalla con media query</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$breakpoint</code></th><td data-label="desc"><p>Nombre del breakpoint</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include response(md){
+   .footer{
+      display: none;
+  }
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-flex"><h3 class="item__heading"><a class="item__name" href="#mixin-flex">flex</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex($jusifycontent: space-around, $alignitem: center, $direction: row) { 
+    display: flex;
+    justify-content: $justifycontent;
+    align-items: $alignitem;
+    flex-direction: $direction;
+ }" data-collapsed="@mixin flex($jusifycontent: space-around, $alignitem: center, $direction: row) { ... }"><code>@mixin flex($jusifycontent: space-around, $alignitem: center, $direction: row) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin de posicionamiento con flexbox</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$jusifycontent</code></th><td data-label="desc"><p>Justificacion del contenido</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>space-around</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$alignitem</code></th><td data-label="desc"><p>Alinea los contenidos</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>center</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>Direccion del flexbox</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>row</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.footer{
+      @include flex(row, space-around);
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-grid"><h3 class="item__heading"><a class="item__name" href="#mixin-grid">grid</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin grid($grid-template-columns: 1fr, $grid-template-rows: 1fr, $grid-gap: 0) { 
+    display: grid;
+    grid-template-columns: 1fr repeat($grid-template-columns, minmax(min-content, 11rem)) 1fr;
+    grid-template-rows: repeat($grid-template-rows, min-content);
+    grid-gap: $grid-gap;
+ }" data-collapsed="@mixin grid($grid-template-columns: 1fr, $grid-template-rows: 1fr, $grid-gap: 0) { ... }"><code>@mixin grid($grid-template-columns: 1fr, $grid-template-rows: 1fr, $grid-gap: 0) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin de posicionamiento con grid</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$grid-template-columns</code></th><td data-label="desc"><p>Columnas del grid</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>1fr</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$grid-template-rows</code></th><td data-label="desc"><p>Filas del grid</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>1fr</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$grid-gap</code></th><td data-label="desc"><p>Espacio entre elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>0</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.footer{
+    @include grid(1fr 1fr, 0);
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-fafaIcons"><h3 class="item__heading"><a class="item__name" href="#mixin-fafaIcons">fafaIcons</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin fafaIcons($color: color(quinary), $font-size: 1.5rem) { 
+    i{
+        font-size: $font-size;
+        mparamin-right: 1%;
+        color: $color;
+    }
+ }" data-collapsed="@mixin fafaIcons($color: color(quinary), $font-size: 1.5rem) { ... }"><code>@mixin fafaIcons($color: color(quinary), $font-size: 1.5rem) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin de estilo de los iconos de fontawesome</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>Color del icono</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>color(quinary)</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$font-size</code></th><td data-label="desc"><p>Tamaño del icono</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>1.5rem</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.footer{
+   @include fafaIcons(color(secundary), 2em);
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-button"><h3 class="item__heading"><a class="item__name" href="#mixin-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button() { 
+    button{
+        a{
+            text-decoration: none;
+            color: color(primary);
+        }
+        padding: 1%;
+        background-color: color(secundary);
+        border: none;
+        color: color(primary);
+    }
+    button:hover{
+        color: color(secundary);
+        background-color: color(quinary);
+    }
+ }" data-collapsed="@mixin button() { ... }"><code>@mixin button() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin de estilo de los botones</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.footer{
+  @include button();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-button2"><h3 class="item__heading"><a class="item__name" href="#mixin-button2">button2</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button2() { 
+    button{
+        width: 90%;
+        mparamin-bottom: 3%;
+        a{
+            text-decoration: none;
+            color: color(primary);
+            font-size: 2em;
+        }
+        padding: 3%;
+        background-color: color(secundary);
+        border: none;
+        color: color(primary);
+    }
+    button:hover{
+        color: color(primary);
+        background-color: color(terciary);
+    }
+ }" data-collapsed="@mixin button2() { ... }"><code>@mixin button2() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin de estilo de otro tipo de boton</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.footer{
+ @include button2();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-color"><code>color</code></a></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Villasass</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

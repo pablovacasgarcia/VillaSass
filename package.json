@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.2.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-dart-scss": "^1.1.0",
+    "gulp-if": "^3.0.0",
+    "gulp-processhtml": "^1.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sassdoc": "^1.3.2",
+    "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-install": "^1.1.0",
+    "node": "^19.6.0",
+    "node-sass": "^8.0.0"
+  },
+  "name": "villasass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -o css scss/styles.scss -w"
+  },
+  "keywords": [],
+  "author": "Pablo Vacas García",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "description": ""
+}

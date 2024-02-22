@@ -1,0 +1,8 @@
+/// Componente: Estilos generales
+* {
+    margin: 0; // Establece el margen exterior en 0 para todos los elementos
+    padding: 0; // Establece el relleno interior en 0 para todos los elementos
+    font-family: $font-family; // Utiliza la variable $font-family para establecer la fuente para todos los elementos
+    box-sizing: border-box; // Incluye el borde y el relleno en el cálculo del ancho y la altura del elemento
+}
+

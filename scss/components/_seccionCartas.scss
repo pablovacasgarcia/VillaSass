@@ -1,0 +1,61 @@
+/// Componente: seccion cartas
+#cards {
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 4 / 5; // Ocupa la fila 4 a la 5 en la rejilla
+
+    #cartas-general {
+        @include flex($alignitem: none); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+        width: 100%; // Ancho del contenedor de las cartas
+
+        #carta {
+            width: 20%; // Ancho de cada carta al 20% del contenedor
+            height: 20%; // Altura de cada carta al 20% del contenedor
+            background-color: color(terniary); // Color de fondo de la carta
+            
+            div {
+                width: 100%; // Ancho del div al 100%
+                height: 100%; // Altura del div al 100%
+                overflow: hidden; // Oculta el contenido que desborda
+            }
+
+            div > img {
+                width: 100%; // Ancho de la imagen al 100%
+                height: 100%; // Altura de la imagen al 100%
+                transition: transform 0.25s; // Transición suave de la transformación
+                margin-bottom: 10%; // Margen inferior del 10%
+
+            }
+
+            div > img:hover {
+                transform: scale(1.1); // Escala la imagen al 110% al hacer hover
+            }
+
+            div {
+                text-align: center; // Alineación del texto al centro
+                @include fafaIcons(color(secundary), 2em); // Utiliza mixins para iconos FontAwesome con color secundario y tamaño de fuente de 2em
+            }
+            
+            p {
+                padding: 1em; // Relleno interno del párrafo de 1em
+            }
+        }
+    }
+}
+
+// Mediaquery
+@include response(md) {
+    #cards {
+        #cartas-general {
+            flex-direction: column; // Cambia la dirección de flexbox a columna
+            align-items: center; // Alinea los elementos al centro
+            #carta {
+                width: 75%; // Ancho de cada carta al 75% del contenedor
+                height: 100%; // Altura de cada carta al 100% del contenedor
+            }
+        }
+    }
+}
+
+
+
+    

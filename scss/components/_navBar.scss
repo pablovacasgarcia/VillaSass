@@ -1,0 +1,40 @@
+/// Componente: Barra de navegación
+.navbar-nav a {
+    position: relative; // Posición relativa para el enlace
+
+    &::after {
+        content: ''; // Contenido pseudo-elemento
+        position: absolute; // Posición absoluta para el pseudo-elemento
+        bottom: 10px; // Distancia al fondo del enlace
+        left: 10%; // Posición inicial del pseudo-elemento
+        width: 0%; // Ancho inicial del pseudo-elemento
+        height: 2px; // Altura del pseudo-elemento
+        background-color: color(terciary); // Color de fondo del pseudo-elemento
+        transition: width 0.5s ease-in-out; // Transición suave del ancho del pseudo-elemento
+    }
+
+    &:hover::after {
+        width: 80%; // Ancho del pseudo-elemento al hacer hover
+    }
+}
+
+.link_active {
+    &::after {
+        content: ''; // Contenido pseudo-elemento
+        position: absolute; // Posición absoluta para el pseudo-elemento
+        bottom: 10px; // Distancia al fondo del enlace
+        left: 10%; // Posición inicial del pseudo-elemento
+        width: 80%!important; // Ancho del pseudo-elemento (importante para anular otras reglas)
+        height: 2px; // Altura del pseudo-elemento
+        background-color: color(terciary); // Color de fondo del pseudo-elemento
+        transition: width 0.5s ease-in-out; // Transición suave del ancho del pseudo-elemento
+    }
+}
+
+// Mediaquery
+@include response(lg) {
+    .navbar-nav {
+        text-align: center; // Alineación del texto al centro en pantallas grandes
+        font-weight: weight('bold'); // Peso de la fuente en negrita
+    }
+}

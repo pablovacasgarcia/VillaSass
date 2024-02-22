@@ -1,0 +1,55 @@
+/// Componente: Villas Search
+.villas-search {
+    height: 30%; // Altura del 30%
+    width: 100%; // Ancho del 100%
+    @include flex($justifycontent: space-between, $alignitem: center); // Utiliza mixins para flexbox con justificación espaciada y alineación vertical al centro
+    background-color: color(primary); // Color de fondo primario
+    padding: 2%; // Relleno interno del 2%
+    color: color(quaternary); // Color del texto cuaternario
+    font-size: medium; // Tamaño de fuente medio
+    @include fafaIcons(color(secundary), 2em); // Utiliza mixins para iconos FontAwesome con color secundario y tamaño de fuente de 2em
+    
+    label {
+        margin-right: 1%; // Margen derecho del 1%
+        font-size: 1em; // Tamaño de fuente de 1em
+        margin-left: 3%; // Margen izquierdo del 3%
+    }
+
+    input {
+        margin-right: 1%; // Margen derecho del 1%
+        width: 15rem; // Ancho de 15rem
+        padding: 1%; // Relleno interno del 1%
+        min-width: 30px; // Ancho mínimo de 30px
+    }
+
+    div {
+        @include flex($justifycontent: flex-start, $alignitem: center); // Utiliza mixins para flexbox con justificación al inicio y alineación vertical al centro
+        width: 70%; // Ancho del 70%
+    }
+
+    @include button(); // Utiliza mixins para estilos de botón
+}
+
+// Mediaquery
+@include response(md) {
+    .villas-search {
+        height: 20rem; // Altura de 20rem en tamaños de pantalla mediano
+        flex-direction: column; // Cambia la dirección de flexbox a columna
+
+        input {
+            width: 30px; // Ancho de 30px
+
+            &:last-child {
+                width: 40px; // Ancho de 40px para el último input
+            }
+        }
+
+        button {
+            width: 10rem; // Ancho de 10rem para el botón
+        }
+
+        div {
+            justify-content: center; // Alinea los elementos al centro horizontalmente
+        }
+    }
+}

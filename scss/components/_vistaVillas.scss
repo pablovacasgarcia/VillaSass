@@ -1,0 +1,60 @@
+/// Componente: vista villas
+#villas-section {
+    grid-column: 1 / -1; // Ocupa todas las columnas disponibles
+    grid-row: 3 / 8; // Ocupa la fila 3 a la 8 en la rejilla
+    
+    .villa-div {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; // Sombra de la caja
+        margin-top: 1%; // Margen superior del 1%
+        @include flex($alignitem: stretch); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+        @include fafaIcons(color(secundary)); // Utiliza mixins para iconos FontAwesome con color secundario
+
+        .villa-div1 {
+            width: 40%; // Ancho del 40%
+            height: auto; // Altura automática
+        }
+
+        .villa-div2 {
+            width: 60%; // Ancho del 60%
+            padding: 2%; // Relleno interno del 2%
+
+            div {
+                @include flex($alignitem: stretch); // Utiliza mixins para flexbox con alineación de elementos alineados al inicio
+
+                h3 {
+                    font-family: $font-family2; // Utiliza la segunda fuente especificada
+                }
+
+                justify-content: space-between; // Espacio uniforme entre elementos
+                margin-top: 1%; // Margen superior del 1%
+
+                p {
+                    i {
+                        margin: 0; // Restablece el margen
+                    }
+                }
+
+                @include button(); // Utiliza mixins para estilos de botón
+            }
+        }
+    }
+}
+
+// Mediaquery
+@include response(md) {
+    #villas-section {
+        .villa-div {
+            flex-direction: column; // Cambia la dirección de flexbox a columna
+
+            .villa-div1 {
+                width: 100%; // Ancho del 100%
+                height: 30%; // Altura del 30%
+            }
+
+            .villa-div2 {
+                width: 100%; // Ancho del 100%
+                height: 70%; // Altura del 70%
+            }
+        }
+    }
+}
