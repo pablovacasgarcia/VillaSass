@@ -1,3 +1,0 @@
-# Proyecto-VillaSass
-
-En la carpeta documentación, esta la página con la paleta de colores, tipografía...
